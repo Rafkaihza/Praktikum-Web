@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox2</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+         }
+
+        .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        }
+
+        .container1 {
+        display: flex;
+        }
+
+        .container3 {
+            display: flex;
+        }
+      
+
+        nav {
+            background-color: pink;
+            padding: 10px;
+            width: 25vw;
+            height: 100vh;
+        }
+
+        header, footer {
+        background-color: green;
+        width: 75vw;
+        padding: 40px;
+        }
+
+        article {
+        flex-grow: 1;
+        height: 70vh;
+        padding: 9px;
+        }
+
+        aside {
+        width: 25vh;
+        background-color: aqua;
+        text-align: center;
+        padding: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <nav>Nav</nav>
+            <div class="container2">
+                <header>Header</header>
+                <div class="container3">
+                    <article>Article</article>
+                    <aside>Aside</aside>
+                </div>
+            <footer>Footer</footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
